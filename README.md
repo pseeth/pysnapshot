@@ -1,6 +1,6 @@
 # SnapShot
 
-This is a really small experimental package for saving code associated with
+This is a tiny helper package for saving code associated with
 an experiment, and reloading it at a later time. There are two main functions:
 
 1. `snapshot.capture`: Captures the code associated with a module into a snapshot at a given path.
