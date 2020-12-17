@@ -33,13 +33,12 @@ def test_hello_world_defaults():
 
         pytest.raises(RuntimeError, snapshot.capture, 
             hello_world, tmpdir, overwrite=False)
+        snapshot.capture(hello_world, tmpdir, overwrite=True)
 
 def test_hello_world_with_modification():
     path = str(Path('examples/hello_world').resolve())
 
     with tempfile.TemporaryDirectory() as moddir:
-        moddir = '/tmp/snapshot/'
-        shutil.rmtree(moddir)
         moddir = Path(moddir)
         shutil.copytree(path, moddir / 'hello_world_copy')
         
