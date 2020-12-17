@@ -1,5 +1,12 @@
 # PySnapShot
 
+**Keep code reproducible by taking SnapShots**
+
+![Build](https://github.com/pseeth/pysnapshot/workflows/Build/badge.svg) 
+[![PyPI version](https://badge.fury.io/py/pysnapshot.svg)](https://badge.fury.io/py/pysnapshot)
+[![codecov](https://codecov.io/gh/pseeth/pysnapshot/branch/main/graph/badge.svg?token=BWI0FHZI5H)](undefined)
+![Lines of code](https://img.shields.io/tokei/lines/github/pseeth/pysnapshot)
+
 This is a tiny helper package for saving code associated with
 an experiment, and reloading it at a later time. There are two main functions:
 

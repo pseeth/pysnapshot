@@ -27,7 +27,8 @@ setup(
     license='MIT',
     packages=find_packages(),
     keywords=['machine learning', 'experimentation'],
-    install_requires=[
-
-    ],
+    install_requires=[],
+    extras_require={ 
+        'tests': ['pytest', 'pytest-cov'],
+    },
 )
