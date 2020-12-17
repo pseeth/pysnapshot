@@ -1,5 +1,5 @@
 import sys
-import snapshot
+import pysnapshot as snapshot
 import imp
 import importlib
 from pathlib import Path

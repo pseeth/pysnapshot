@@ -4,8 +4,8 @@ with open('README.md') as f:
     long_description = f.read()
 
 setup(
-    name='snapshot',
-    version='0.1.0',
+    name='pysnapshot',
+    version='0.1.0a',
     classifiers=[
         'Intended Audience :: Developers',
         'Intended Audience :: Education',
@@ -23,11 +23,11 @@ setup(
     long_description_content_type='text/markdown',
     author='Prem Seetharaman',
     author_email='prem@descript.com',
-    url='https://github.com/pseeth/snapshot',
+    url='https://github.com/pseeth/pysnapshot',
     license='MIT',
     packages=find_packages(),
     keywords=['machine learning', 'experimentation'],
     install_requires=[
-        
+
     ],
 )
