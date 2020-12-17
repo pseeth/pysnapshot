@@ -48,3 +48,26 @@ From snapshot TEST
 /private/tmp/hello_world_snap/hello_world/hello.py TEST
 From snapshot, overwriting the original package code TEST
 ```
+
+# Releasing
+
+Do the following steps:
+
+```
+python setup.py sdist
+```
+
+Upload it to test PyPI:
+
+```
+pip install twine
+twine upload --repository testpypi dist/*
+pip install -U --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple -U snapshot
+```
+
+Make sure you can install it and it works (e.g. run the examples). Now upload
+to actual PyPI:
+
+```
+twine upload dist/*
+```
