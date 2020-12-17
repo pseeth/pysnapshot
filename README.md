@@ -70,7 +70,7 @@ And it created a Python module with this directory structure:
         └── __init__.py
 ```
 
-# Releasing
+## Releasing
 
 Do the following steps:
 
